@@ -11,13 +11,16 @@
   </head>
   <body>
     <h1>Welcome to TaskListr</h1>
-    <button id ="button-list" onclick="seeLists()">See Your Lists</button>
-    <div class="lists"></div>
-    
-    <form action="#">
-      <input type="text" name="list[name]">
-      <input type="submit" onclick= "createList()" name="" id="">
+    <button id ="button-list" onclick="seeListData()">See Your Lists</button>
+    <div class="lists">
+      <ul class="lists-ul">
+      </ul>
+    </div>
+
+    <form>
+      <input type="text" name="list[name]" class="list-name">
     </form>
+    <button onclick= "createList()">Create List</button>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src = "task.js"></script>
